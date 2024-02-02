@@ -28,6 +28,13 @@ A minimalist tool that turns text prompts into captivating images using cutting-
 # 📹 Video - Watch Alfred92 in ACTION
 [![Watch Alfred92 in Action](https://img.shields.io/badge/Watch-Demo-red)](https://streamable.com/omchwv)
 
+## 📷 Screenshots
+![Screenshot 1](screenshots/1.png)
+![Screenshot 2](screenshots/2.png)
+![Screenshot 3](screenshots/3.png)
+![Screenshot 3](screenshots/4.png)
+![Screenshot 3](screenshots/5.png)
+
 ## 🔮 Upcoming Feature
 - **Color Picker:**
   - Select any point on an image to get the color code and corresponding name.
