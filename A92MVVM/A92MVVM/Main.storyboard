@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pec-Rd-rzB">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeViewController-->
+        <scene sceneID="WTL-ij-Ir9">
+            <objects>
+                <viewController storyboardIdentifier="FirstScreenVC" title="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KTJ-xX-0zb" customClass="FirstScreenVC" customModule="A92MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EB6-kS-vWf">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT1-sV-37e" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="160" width="430" height="345"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="HomeScreen"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qo3-1r-N88">
+                                <rect key="frame" x="169" y="801" width="92" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="lR5-rH-NDN"/>
+                                    <constraint firstAttribute="height" constant="90" id="p3u-2S-JQE"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle"/>
+                                    <imageReference key="image" image="wand.and.stars" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPageButtonTapped:" destination="KTJ-xX-0zb" eventType="touchUpInside" id="ofu-yz-RYD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoOnHomeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Bci-uy-qhc">
+                                <rect key="frame" x="16" y="513" width="398" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KG-sO-S4l" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="69" y="826" width="292" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tlm-F2-XNr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="AnimationOnHomeScreenButton2"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LgG-vD-NVh"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RT1-sV-37e" firstAttribute="leading" secondItem="LgG-vD-NVh" secondAttribute="leading" id="1yh-mF-nXl"/>
+                            <constraint firstItem="Bci-uy-qhc" firstAttribute="leading" secondItem="LgG-vD-NVh" secondAttribute="leading" constant="16" id="3Dx-rw-hSa"/>
+                            <constraint firstItem="4KG-sO-S4l" firstAttribute="top" secondItem="Bci-uy-qhc" secondAttribute="bottom" constant="33" id="6Ho-Hk-fi7"/>
+                            <constraint firstItem="LgG-vD-NVh" firstAttribute="trailing" secondItem="Qo3-1r-N88" secondAttribute="trailing" constant="169" id="Bbj-0y-aaT"/>
+                            <constraint firstItem="LgG-vD-NVh" firstAttribute="trailing" secondItem="4KG-sO-S4l" secondAttribute="trailing" constant="69" id="NRs-9r-h1o"/>
+                            <constraint firstItem="LgG-vD-NVh" firstAttribute="trailing" secondItem="Bci-uy-qhc" secondAttribute="trailing" constant="16" id="Rvj-Wu-F5L"/>
+                            <constraint firstItem="LgG-vD-NVh" firstAttribute="bottom" secondItem="Qo3-1r-N88" secondAttribute="bottom" constant="35" id="aGX-iK-fTt"/>
+                            <constraint firstItem="Qo3-1r-N88" firstAttribute="top" secondItem="Bci-uy-qhc" secondAttribute="bottom" constant="7.6699999999999999" id="fUf-mj-osc"/>
+                            <constraint firstItem="RT1-sV-37e" firstAttribute="trailing" secondItem="LgG-vD-NVh" secondAttribute="trailing" id="hDO-76-40d"/>
+                            <constraint firstItem="Bci-uy-qhc" firstAttribute="top" secondItem="RT1-sV-37e" secondAttribute="bottom" constant="8" id="hRs-9V-SXh"/>
+                            <constraint firstItem="LgG-vD-NVh" firstAttribute="bottom" secondItem="4KG-sO-S4l" secondAttribute="bottom" constant="27" id="jSq-cZ-bLZ"/>
+                            <constraint firstItem="Qo3-1r-N88" firstAttribute="leading" secondItem="LgG-vD-NVh" secondAttribute="leading" constant="169" id="kzC-uz-hLZ"/>
+                            <constraint firstItem="4KG-sO-S4l" firstAttribute="leading" secondItem="LgG-vD-NVh" secondAttribute="leading" constant="69" id="nmf-5s-utw"/>
+                            <constraint firstItem="RT1-sV-37e" firstAttribute="top" secondItem="EB6-kS-vWf" secondAttribute="topMargin" constant="57" id="qdi-nf-pLd"/>
+                            <constraint firstItem="Bci-uy-qhc" firstAttribute="top" secondItem="RT1-sV-37e" secondAttribute="bottom" constant="8" id="yyQ-1l-YLj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1d9-gn-fQc">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="HtK-3D-bc1"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="animatedLogo" destination="RT1-sV-37e" id="wvo-bM-1LK"/>
+                        <outlet property="myAppName" destination="Bci-uy-qhc" id="hHg-4q-EfE"/>
+                        <outlet property="nextPageAnimation" destination="4KG-sO-S4l" id="Mut-af-e7r"/>
+                        <segue destination="BYZ-38-t0r" kind="show" id="LYp-9J-kPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6K-1d-k1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193.95348837209303" y="-27.682403433476395"/>
+        </scene>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SecondScreenVC" title="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SecondScreenVC" customModule="A92MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCG-VZ-ceI">
+                                <rect key="frame" x="84" y="771" width="252" height="92"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="N6i-Xc-2n1"/>
+                                    <constraint firstAttribute="height" constant="92" id="tpH-mD-OZM"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tableBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="newicon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Rj-yd-SCW"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-JE-wJY" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="110" y="701" width="201" height="197"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loadingAnimationRing"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iT5-eO-zd1">
+                                <rect key="frame" x="31" y="103" width="369" height="342"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Csb-Ft-CEF">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-K5-MZG">
+                                        <rect key="frame" x="0.0" y="175" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-S9-V62">
+                                        <rect key="frame" x="190" y="0.0" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brb-DY-RNg">
+                                        <rect key="frame" x="190" y="175" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="loadingAnimationBoxThree" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-NZ-zfD" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="0.0" y="175" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loadingAnimation"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="loadingAnimationBoxFour" translatesAutoresizingMaskIntoConstraints="NO" id="HRB-C3-d5c" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="187" y="175" width="182" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loadingAnimation"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="loadingAnimationBoxTwo" translatesAutoresizingMaskIntoConstraints="NO" id="gO3-1D-SJP" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="190" y="0.0" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loadingAnimation"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="loadingAnimationBox" translatesAutoresizingMaskIntoConstraints="NO" id="0Gc-UN-wrJ" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loadingAnimation"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Prompt..." textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="18" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="akb-RH-MSW">
+                                <rect key="frame" x="396" y="533.66666666666663" width="317" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" keyboardKey="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="b4t-RK-CYE"/>
+                                    <constraint firstAttribute="width" constant="317" id="ueU-lN-ecV"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="akb-RH-MSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Xd-bT-QMx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fuV-JE-wJY" secondAttribute="trailing" constant="64" id="AnY-cG-Ct4"/>
+                            <constraint firstItem="fuV-JE-wJY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="MFh-Cy-uKF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fuV-JE-wJY" secondAttribute="bottom" constant="20" id="ahI-Jx-rP4"/>
+                            <constraint firstItem="akb-RH-MSW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="90" id="gXq-3n-uXf"/>
+                            <constraint firstItem="wCG-VZ-ceI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="h9g-bB-C3Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wCG-VZ-ceI" secondAttribute="trailing" constant="115" id="krS-ta-6Nx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wCG-VZ-ceI" secondAttribute="bottom" constant="60" id="yr2-P5-nVq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yf3-XC-Fho"/>
+                    <connections>
+                        <outlet property="animationOnSearchButton" destination="fuV-JE-wJY" id="OOg-Co-GPN"/>
+                        <outlet property="containerView" destination="iT5-eO-zd1" id="ynM-X4-YcT"/>
+                        <outlet property="imageView" destination="Csb-Ft-CEF" id="YFr-fL-7dS"/>
+                        <outlet property="imageViewFour" destination="brb-DY-RNg" id="9vD-9K-dRG"/>
+                        <outlet property="imageViewThree" destination="AdQ-K5-MZG" id="xdC-4g-Db6"/>
+                        <outlet property="imageViewTwo" destination="Hwr-S9-V62" id="Oka-Aa-e8P"/>
+                        <outlet property="loadingAnimationBox" destination="0Gc-UN-wrJ" id="6R7-0s-rO6"/>
+                        <outlet property="loadingAnimationBoxFour" destination="HRB-C3-d5c" id="jw0-bk-D4w"/>
+                        <outlet property="loadingAnimationBoxThree" destination="ajE-NZ-zfD" id="pwJ-nM-Ay7"/>
+                        <outlet property="loadingAnimationBoxTwo" destination="gO3-1D-SJP" id="Cg0-ni-kEB"/>
+                        <outlet property="searchButton" destination="wCG-VZ-ceI" id="9Wo-Ov-tf6"/>
+                        <outlet property="textField" destination="akb-RH-MSW" id="Q0u-tI-Z9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="-28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c37-N6-P5g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pec-Rd-rzB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OMa-HO-bnc">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="AccentColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KTJ-xX-0zb" kind="relationship" relationship="rootViewController" id="Rnu-YI-B9w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ENJ-qh-5mn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="-27"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="logoOnHomeScreen" width="999" height="280"/>
+        <image name="newicon" width="826" height="312"/>
+        <image name="wand.and.stars" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
