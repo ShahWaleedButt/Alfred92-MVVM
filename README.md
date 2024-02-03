@@ -26,7 +26,7 @@ A minimalist tool that turns text prompts into captivating images using cutting-
    - Explore and download images effortlessly in a clean grid layout.
 
 # 📹 Video - Watch Alfred92 in ACTION
-[![Watch Alfred92 in Action](https://img.shields.io/badge/Watch-Demo-red)](https://streamable.com/omchwv)
+[![Watch Alfred92 in Action](https://img.shields.io/badge/Watch-Demo-red)](screenshots/test.mp4)
 
 ## 📷 Screenshots
 ![Screenshot 1](screenshots/1.png)
