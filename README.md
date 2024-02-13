@@ -29,6 +29,7 @@ A minimalist tool that turns text prompts into captivating images using cutting-
 [![Watch Alfred92 in Action](https://img.shields.io/badge/Watch-Demo-red)](https://youtu.be/4GysLuKhkXw)
 
 ## 📷 Screenshots
+![Screenshot x](screenshots/gif.gif)
 ![Screenshot 1](screenshots/1.png)
 ![Screenshot 2](screenshots/2.png)
 ![Screenshot 3](screenshots/3.png)
