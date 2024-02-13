@@ -47,4 +47,4 @@ A minimalist tool that turns text prompts into captivating images using cutting-
 ## 🌟 Conclusion
 Alfred92 is your go-to for efficient image creation, combining simplicity with AI power.
 
-[![Visit Project](https://img.shields.io/badge/Visit-Project-orange)](https://github.com/ShahWaleedButt/Alfred92-MVVM.)
+[![Visit Project](https://img.shields.io/badge/Visit_my_LinkedIn-8A2BE2)](https://linkedin.com/in/ShahWaleedButt)
